@@ -1,0 +1,158 @@
+ 
+
+<html>
+
+<head>
+
+<title>Dashboard Cardio</title>
+
+<style>
+
+body{font-family:Arial;background:#f5f6fa}
+
+.container{width:100%;margin:auto}
+
+.card{background:white;padding:20px;margin:20px;border-radius:8px;overflow-x:auto;}
+
+img{width:100%}
+
+table {width: 100%; border-collapse: collapse;}
+th, td {padding: 8px; text-align: left; border-bottom: 1px solid #ddd;}
+thead {background-color: #f2f2f2;}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Relatório de Análise Cardio</h1>
+
+<div class='card'><h2>CHD por Comorbidade</h2><img src='/static/output/chd_por_comorbidades_combinado.png'></div>
+
+<div class='card'><h2>Análise de Intercorrências Fetais</h2><h3>Relação entre Intercorrências Fetais e CHD</h3><img src='/static/output/chd_por_intercorrencias_fetais_combinado.png'><hr><p>Média das variáveis para cada categoria de Doppler Ducto Venoso:</p><table border="1" class="dataframe table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idade</th>
+      <th>imc</th>
+      <th>pressao_sistolica</th>
+      <th>frequencia_cardiaca_fetal</th>
+      <th>idade_gestacional</th>
+    </tr>
+    <tr>
+      <th>doppler_ducto_venoso</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Alterado</th>
+      <td>29.37</td>
+      <td>24.70</td>
+      <td>142.64</td>
+      <td>175.05</td>
+      <td>39.75</td>
+    </tr>
+  </tbody>
+</table><hr><p>Média das variáveis para cada categoria de Eixo Cardiaco:</p><table border="1" class="dataframe table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idade</th>
+      <th>imc</th>
+      <th>pressao_sistolica</th>
+      <th>frequencia_cardiaca_fetal</th>
+      <th>idade_gestacional</th>
+    </tr>
+    <tr>
+      <th>eixo_cardiaco</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Desviado</th>
+      <td>29.37</td>
+      <td>24.70</td>
+      <td>142.64</td>
+      <td>175.05</td>
+      <td>39.75</td>
+    </tr>
+  </tbody>
+</table><hr><p>Média das variáveis para cada categoria de Quatro Camaras:</p><table border="1" class="dataframe table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idade</th>
+      <th>imc</th>
+      <th>pressao_sistolica</th>
+      <th>frequencia_cardiaca_fetal</th>
+      <th>idade_gestacional</th>
+    </tr>
+    <tr>
+      <th>quatro_camaras</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Anormal</th>
+      <td>29.37</td>
+      <td>24.70</td>
+      <td>142.64</td>
+      <td>175.05</td>
+      <td>39.75</td>
+    </tr>
+  </tbody>
+</table><hr></div>
+
+<div class='card'><h2>CHD por Estilo de Vida</h2><img src='/static/output/chd_por_estilo_vida_combinado.png'></div>
+
+
+    <div class='card'>
+        <h2>Análises Focadas de Comorbidades</h2>
+        <img src='/static/output/analises_focadas_combinado.png'>
+    </div>
+    
+
+<div class='card'><h2>Gráficos de Médias por Comorbidade</h2><img src='/static/output/medias_por_comorbidade_combinado.png'></div>
+
+
+    <div class='card'>
+    <h3>Sinais Vitais</h3>
+    <img src="/static/output/sinais_vitais.png">
+    </div>
+    
+    <div class='card'>
+    <h3>Boxplots CHD</h3>
+    <img src="/static/output/boxplots.png">
+    </div>
+    
+    <div class='card'>
+    <h3>Correlação</h3>
+    <img src="/static/output/heatmap.png">
+    </div>
+    
+
+</div>
+
+</body>
+
+</html>
+
